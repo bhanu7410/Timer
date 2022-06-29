@@ -17,7 +17,7 @@ rese.addEventListener("click", reset)
 
 
 function Timer() {
-    // ranColor(Math.floor(Math.random() * 3));
+    ranColor(Math.floor(Math.random() * 3));
     if (msec < 9) {
         msectag.innerHTML = "0" + (++msec);
 
@@ -65,23 +65,23 @@ function reset() {
     pause()
     star.disabled = false;
 }
-// function ranColor(p) {
-//     switch (p) {
-//         case p === 1:
-//             ++r;
-//             break;
-//         case 2:
-//             ++g
-//             break;
-//         case 0:
-//             ++b
-//             break
-//     }
-//     if (r, g, b === 255) {
-//         b = 0;
-//         r = 0;
-//         g = 0;
-//     }
-//     const newColor = `rgb(${r},${g},${b})`
-//     document.body.style.backgroundColor = newColor;
-// }
+function ranColor(p) {
+    switch (p) {
+        case p === 1:
+            ++r;
+            break;
+        case 2:
+            ++g
+            break;
+        case 0:
+            ++b
+            break
+    }
+    if (r, g, b === 255) {
+        b = 0;
+        r = 0;
+        g = 0;
+    }
+    const newColor = `rgb(${r},${g},${b})`
+    document.body.style.backgroundColor = newColor;
+}
